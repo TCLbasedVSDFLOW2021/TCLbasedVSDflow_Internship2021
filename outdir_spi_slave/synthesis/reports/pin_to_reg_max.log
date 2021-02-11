@@ -1,0 +1,138 @@
+Vesta static timing analysis, pin-to-register and register-to-pin maximum timing
+
+Top 20 maximum delay paths:
+Path input pin SCK to DFFSR_28/CLK delay 453.915 ps
+      0.0 ps          SCK:             -> CLKBUF1_1/A
+    156.3 ps  SCK_bF_buf4: CLKBUF1_1/Y ->   INVX4_3/A
+    231.5 ps         _14_:   INVX4_3/Y ->  DFFSR_28/CLK
+
+   setup at destination = 222.384
+
+Path input pin SCK to DFFSR_29/CLK delay 453.915 ps
+      0.0 ps          SCK:             -> CLKBUF1_1/A
+    156.3 ps  SCK_bF_buf4: CLKBUF1_1/Y ->   INVX4_3/A
+    231.5 ps         _14_:   INVX4_3/Y ->  DFFSR_29/CLK
+
+   setup at destination = 222.384
+
+Path input pin SCK to DFFSR_30/CLK delay 453.915 ps
+      0.0 ps          SCK:             -> CLKBUF1_1/A
+    156.3 ps  SCK_bF_buf4: CLKBUF1_1/Y ->   INVX4_3/A
+    231.5 ps         _14_:   INVX4_3/Y ->  DFFSR_30/CLK
+
+   setup at destination = 222.384
+
+Path input pin SCK to DFFSR_31/CLK delay 453.915 ps
+      0.0 ps          SCK:             -> CLKBUF1_1/A
+    156.3 ps  SCK_bF_buf4: CLKBUF1_1/Y ->   INVX4_3/A
+    231.5 ps         _14_:   INVX4_3/Y ->  DFFSR_31/CLK
+
+   setup at destination = 222.384
+
+Path input pin SCK to DFFSR_32/CLK delay 453.915 ps
+      0.0 ps          SCK:             -> CLKBUF1_1/A
+    156.3 ps  SCK_bF_buf4: CLKBUF1_1/Y ->   INVX4_3/A
+    231.5 ps         _14_:   INVX4_3/Y ->  DFFSR_32/CLK
+
+   setup at destination = 222.384
+
+Path input pin SCK to DFFSR_33/CLK delay 453.915 ps
+      0.0 ps          SCK:             -> CLKBUF1_1/A
+    156.3 ps  SCK_bF_buf4: CLKBUF1_1/Y ->   INVX4_3/A
+    231.5 ps         _14_:   INVX4_3/Y ->  DFFSR_33/CLK
+
+   setup at destination = 222.384
+
+Path input pin SCK to DFFSR_34/CLK delay 453.915 ps
+      0.0 ps          SCK:             -> CLKBUF1_1/A
+    156.3 ps  SCK_bF_buf4: CLKBUF1_1/Y ->   INVX4_3/A
+    231.5 ps         _14_:   INVX4_3/Y ->  DFFSR_34/CLK
+
+   setup at destination = 222.384
+
+Path input pin SCK to DFFSR_35/CLK delay 453.915 ps
+      0.0 ps          SCK:             -> CLKBUF1_1/A
+    156.3 ps  SCK_bF_buf4: CLKBUF1_1/Y ->   INVX4_3/A
+    231.5 ps         _14_:   INVX4_3/Y ->  DFFSR_35/CLK
+
+   setup at destination = 222.384
+
+Path input pin SCK to DFFSR_36/CLK delay 453.915 ps
+      0.0 ps          SCK:             -> CLKBUF1_1/A
+    156.3 ps  SCK_bF_buf4: CLKBUF1_1/Y ->   INVX4_3/A
+    231.5 ps         _14_:   INVX4_3/Y ->  DFFSR_36/CLK
+
+   setup at destination = 222.384
+
+Path input pin SCK to DFFSR_37/CLK delay 453.915 ps
+      0.0 ps          SCK:             -> CLKBUF1_1/A
+    156.3 ps  SCK_bF_buf4: CLKBUF1_1/Y ->   INVX4_3/A
+    231.5 ps         _14_:   INVX4_3/Y ->  DFFSR_37/CLK
+
+   setup at destination = 222.384
+
+Path input pin SCK to DFFSR_5/CLK delay 391.872 ps
+      0.0 ps          SCK:             -> CLKBUF1_1/A
+    156.3 ps  SCK_bF_buf4: CLKBUF1_1/Y ->   DFFSR_5/CLK
+
+   setup at destination = 235.608
+
+Path input pin SCK to DFFSR_10/CLK delay 391.872 ps
+      0.0 ps          SCK:             -> CLKBUF1_1/A
+    156.3 ps  SCK_bF_buf4: CLKBUF1_1/Y ->  DFFSR_10/CLK
+
+   setup at destination = 235.608
+
+Path input pin SCK to DFFSR_15/CLK delay 391.872 ps
+      0.0 ps          SCK:             -> CLKBUF1_1/A
+    156.3 ps  SCK_bF_buf4: CLKBUF1_1/Y ->  DFFSR_15/CLK
+
+   setup at destination = 235.608
+
+Path input pin SCK to DFFSR_20/CLK delay 391.872 ps
+      0.0 ps          SCK:             -> CLKBUF1_1/A
+    156.3 ps  SCK_bF_buf4: CLKBUF1_1/Y ->  DFFSR_20/CLK
+
+   setup at destination = 235.608
+
+Path input pin SCK to DFFSR_25/CLK delay 391.872 ps
+      0.0 ps          SCK:             -> CLKBUF1_1/A
+    156.3 ps  SCK_bF_buf4: CLKBUF1_1/Y ->  DFFSR_25/CLK
+
+   setup at destination = 235.608
+
+Path input pin SDI to DFFSR_5/D delay 380.151 ps
+      0.0 ps       SDI:              -> NAND2X1_16/B
+     40.0 ps      _74_: NAND2X1_16/Y -> OAI21X1_16/C
+    118.4 ps  _162__0_: OAI21X1_16/Y ->  MUX2X1_14/A
+    217.3 ps     _126_:  MUX2X1_14/Y -> OAI21X1_36/A
+    295.7 ps    _0__0_: OAI21X1_36/Y ->    DFFSR_5/D
+
+   setup at destination = 84.4498
+
+Path input pin SCK to DFFSR_1/CLK delay 376.789 ps
+      0.0 ps          SCK:             -> CLKBUF1_2/A
+    144.2 ps  SCK_bF_buf3: CLKBUF1_2/Y ->   DFFSR_1/CLK
+
+   setup at destination = 232.554
+
+Path input pin SCK to DFFSR_6/CLK delay 376.789 ps
+      0.0 ps          SCK:             -> CLKBUF1_2/A
+    144.2 ps  SCK_bF_buf3: CLKBUF1_2/Y ->   DFFSR_6/CLK
+
+   setup at destination = 232.554
+
+Path input pin SCK to DFFSR_11/CLK delay 376.789 ps
+      0.0 ps          SCK:             -> CLKBUF1_2/A
+    144.2 ps  SCK_bF_buf3: CLKBUF1_2/Y ->  DFFSR_11/CLK
+
+   setup at destination = 232.554
+
+Path input pin SCK to DFFSR_16/CLK delay 376.789 ps
+      0.0 ps          SCK:             -> CLKBUF1_2/A
+    144.2 ps  SCK_bF_buf3: CLKBUF1_2/Y ->  DFFSR_16/CLK
+
+   setup at destination = 232.554
+
+-----------------------------------------
+

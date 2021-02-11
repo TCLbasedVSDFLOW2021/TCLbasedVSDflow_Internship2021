@@ -1,0 +1,108 @@
+
+ /----------------------------------------------------------------------------\
+ |                                                                            |
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |                                                                            |
+ |  Copyright (C) 2012 - 2019  Clifford Wolf <clifford@clifford.at>           |
+ |                                                                            |
+ |  Permission to use, copy, modify, and/or distribute this software for any  |
+ |  purpose with or without fee is hereby granted, provided that the above    |
+ |  copyright notice and this permission notice appear in all copies.         |
+ |                                                                            |
+ |  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
+ |  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
+ |  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
+ |  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    |
+ |  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN     |
+ |  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF   |
+ |  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.            |
+ |                                                                            |
+ \----------------------------------------------------------------------------/
+
+ Yosys 0.9 (git sha1 1979e0b)
+
+
+-- Executing script file `/home/ayush/vsdflow/outdir_spi_slave/spi_slave.hier.ys' --
+
+1. Executing Liberty frontend.
+Imported 428 cell types from liberty file.
+
+2. Executing Verilog-2005 frontend: /home/ayush/vsdflow/verilog/spi_slave.v
+Parsing Verilog input from `/home/ayush/vsdflow/verilog/spi_slave.v' to AST representation.
+Generating RTLIL representation for module `\spi_slave'.
+Successfully finished Verilog frontend.
+
+3. Executing Verilog-2005 frontend: /home/ayush/vsdflow/verilog/picorv32.v
+Parsing Verilog input from `/home/ayush/vsdflow/verilog/picorv32.v' to AST representation.
+Generating RTLIL representation for module `\picorv32'.
+Generating RTLIL representation for module `\picorv32_regs'.
+Generating RTLIL representation for module `\picorv32_pcpi_mul'.
+Generating RTLIL representation for module `\picorv32_pcpi_fast_mul'.
+Generating RTLIL representation for module `\picorv32_pcpi_div'.
+Generating RTLIL representation for module `\picorv32_axi'.
+Generating RTLIL representation for module `\picorv32_axi_adapter'.
+Generating RTLIL representation for module `\picorv32_wb'.
+Successfully finished Verilog frontend.
+
+4. Executing HIERARCHY pass (managing design hierarchy).
+
+4.1. Executing AST frontend in derive mode using pre-parsed AST for module `\picorv32'.
+Parameter \ENABLE_COUNTERS = 1'1
+Parameter \ENABLE_COUNTERS64 = 1'1
+Parameter \ENABLE_REGS_16_31 = 1'1
+Parameter \ENABLE_REGS_DUALPORT = 1'1
+Parameter \TWO_STAGE_SHIFT = 1'1
+Parameter \BARREL_SHIFTER = 1'0
+Parameter \TWO_CYCLE_COMPARE = 1'0
+Parameter \TWO_CYCLE_ALU = 1'0
+Parameter \COMPRESSED_ISA = 1'0
+Parameter \CATCH_MISALIGN = 1'1
+Parameter \CATCH_ILLINSN = 1'1
+Parameter \ENABLE_PCPI = 1'0
+Parameter \ENABLE_MUL = 1'0
+Parameter \ENABLE_FAST_MUL = 1'0
+Parameter \ENABLE_DIV = 1'0
+Parameter \ENABLE_IRQ = 1'0
+Parameter \ENABLE_IRQ_QREGS = 1'1
+Parameter \ENABLE_IRQ_TIMER = 1'1
+Parameter \ENABLE_TRACE = 1'0
+Parameter \REGS_INIT_ZERO = 1'0
+Parameter \MASKED_IRQ = 0
+Parameter \LATCHED_IRQ = 32'11111111111111111111111111111111
+Parameter \PROGADDR_RESET = 0
+Parameter \PROGADDR_IRQ = 16
+Parameter \STACKADDR = 32'11111111111111111111111111111111
+Generating RTLIL representation for module `$paramod$4d2dfdcc1db1a7362453fb449ccdda75bb1b39f9\picorv32'.
+
+4.2. Executing AST frontend in derive mode using pre-parsed AST for module `\picorv32'.
+Parameter \ENABLE_COUNTERS = 1'1
+Parameter \ENABLE_COUNTERS64 = 1'1
+Parameter \ENABLE_REGS_16_31 = 1'1
+Parameter \ENABLE_REGS_DUALPORT = 1'1
+Parameter \TWO_STAGE_SHIFT = 1'1
+Parameter \BARREL_SHIFTER = 1'0
+Parameter \TWO_CYCLE_COMPARE = 1'0
+Parameter \TWO_CYCLE_ALU = 1'0
+Parameter \COMPRESSED_ISA = 1'0
+Parameter \CATCH_MISALIGN = 1'1
+Parameter \CATCH_ILLINSN = 1'1
+Parameter \ENABLE_PCPI = 1'0
+Parameter \ENABLE_MUL = 1'0
+Parameter \ENABLE_FAST_MUL = 1'0
+Parameter \ENABLE_DIV = 1'0
+Parameter \ENABLE_IRQ = 1'0
+Parameter \ENABLE_IRQ_QREGS = 1'1
+Parameter \ENABLE_IRQ_TIMER = 1'1
+Parameter \ENABLE_TRACE = 1'0
+Parameter \REGS_INIT_ZERO = 1'0
+Parameter \MASKED_IRQ = 0
+Parameter \LATCHED_IRQ = 32'11111111111111111111111111111111
+Parameter \PROGADDR_RESET = 0
+Parameter \PROGADDR_IRQ = 16
+Parameter \STACKADDR = 32'11111111111111111111111111111111
+Found cached RTLIL representation for module `$paramod$4d2dfdcc1db1a7362453fb449ccdda75bb1b39f9\picorv32'.
+
+End of script. Logfile hash: 580ec1f2af
+CPU: user 0.41s system 0.02s, MEM: 41.62 MB total, 35.65 MB resident
+Yosys 0.9 (git sha1 1979e0b)
+Time spent: 39% 2x read_liberty (0 sec), 39% 4x read_verilog (0 sec), ...

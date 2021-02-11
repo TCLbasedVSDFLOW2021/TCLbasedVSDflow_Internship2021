@@ -1,0 +1,131 @@
+Vesta static timing analysis, pin-to-register and register-to-pin minimum timing
+
+Top 20 minimum delay paths:
+Path input pin SDI to output pin odata[0] delay 62.1403 ps
+      0.0 ps       SDI:            -> BUFX2_10/A
+     62.1 ps  odata[0]: BUFX2_10/Y -> odata[0]
+
+Path input pin idata[7] to DFFSR_37/D delay 136.495 ps
+      0.0 ps  idata[7]:              -> OAI21X1_10/A
+     71.1 ps      _67_: OAI21X1_10/Y -> NAND2X1_14/B
+    109.3 ps    _3__7_: NAND2X1_14/Y ->   DFFSR_37/D
+
+   hold at destination = 27.2384
+
+Path input pin idata[5] to DFFSR_35/D delay 136.495 ps
+      0.0 ps  idata[5]:              ->  OAI21X1_8/A
+     71.1 ps      _62_:  OAI21X1_8/Y -> NAND2X1_13/B
+    109.3 ps    _3__5_: NAND2X1_13/Y ->   DFFSR_35/D
+
+   hold at destination = 27.2384
+
+Path input pin idata[3] to DFFSR_33/D delay 136.495 ps
+      0.0 ps  idata[3]:              ->  OAI21X1_6/A
+     71.1 ps      _57_:  OAI21X1_6/Y -> NAND2X1_12/B
+    109.3 ps    _3__3_: NAND2X1_12/Y ->   DFFSR_33/D
+
+   hold at destination = 27.2384
+
+Path input pin idata[1] to DFFSR_31/D delay 136.495 ps
+      0.0 ps  idata[1]:              ->  OAI21X1_4/A
+     71.1 ps      _52_:  OAI21X1_4/Y -> NAND2X1_11/B
+    109.3 ps    _3__1_: NAND2X1_11/Y ->   DFFSR_31/D
+
+   hold at destination = 27.2384
+
+Path input pin SDI to DFFSR_16/D delay 146.427 ps
+      0.0 ps   SDI:              ->    INVX2_8/A
+     72.8 ps  _86_:    INVX2_8/Y -> OAI21X1_34/B
+    121.5 ps   _8_: OAI21X1_34/Y ->   DFFSR_16/D
+
+   hold at destination = 24.9399
+
+Path input pin idata[0] to DFFSR_30/D delay 147.198 ps
+      0.0 ps  idata[0]:             -> AOI21X1_3/A
+     74.4 ps      _47_: AOI21X1_3/Y -> AOI21X1_4/C
+    123.1 ps    _3__0_: AOI21X1_4/Y ->  DFFSR_30/D
+
+   hold at destination = 24.1466
+
+Path input pin SDI to DFFSR_17/D delay 148.986 ps
+      0.0 ps   SDI:              ->    INVX2_8/A
+     72.8 ps  _86_:    INVX2_8/Y -> OAI21X1_32/A
+    131.2 ps   _6_: OAI21X1_32/Y ->   DFFSR_17/D
+
+   hold at destination = 17.7648
+
+Path input pin SCK to DFFSR_24/CLK delay 149.99 ps
+      0.0 ps          SCK:             -> CLKBUF1_5/A
+    138.5 ps  SCK_bF_buf0: CLKBUF1_5/Y ->  DFFSR_24/CLK
+
+   hold at destination = 11.4639
+
+Path input pin SCK to DFFSR_19/CLK delay 149.99 ps
+      0.0 ps          SCK:             -> CLKBUF1_5/A
+    138.5 ps  SCK_bF_buf0: CLKBUF1_5/Y ->  DFFSR_19/CLK
+
+   hold at destination = 11.4639
+
+Path input pin SCK to DFFSR_14/CLK delay 149.99 ps
+      0.0 ps          SCK:             -> CLKBUF1_5/A
+    138.5 ps  SCK_bF_buf0: CLKBUF1_5/Y ->  DFFSR_14/CLK
+
+   hold at destination = 11.4639
+
+Path input pin SCK to DFFSR_9/CLK delay 149.99 ps
+      0.0 ps          SCK:             -> CLKBUF1_5/A
+    138.5 ps  SCK_bF_buf0: CLKBUF1_5/Y ->   DFFSR_9/CLK
+
+   hold at destination = 11.4639
+
+Path input pin SCK to DFFSR_4/CLK delay 149.99 ps
+      0.0 ps          SCK:             -> CLKBUF1_5/A
+    138.5 ps  SCK_bF_buf0: CLKBUF1_5/Y ->   DFFSR_4/CLK
+
+   hold at destination = 11.4639
+
+Path input pin SCK to DFFSR_23/CLK delay 149.99 ps
+      0.0 ps          SCK:             -> CLKBUF1_4/A
+    138.5 ps  SCK_bF_buf1: CLKBUF1_4/Y ->  DFFSR_23/CLK
+
+   hold at destination = 11.4639
+
+Path input pin SCK to DFFSR_18/CLK delay 149.99 ps
+      0.0 ps          SCK:             -> CLKBUF1_4/A
+    138.5 ps  SCK_bF_buf1: CLKBUF1_4/Y ->  DFFSR_18/CLK
+
+   hold at destination = 11.4639
+
+Path input pin SCK to DFFSR_13/CLK delay 149.99 ps
+      0.0 ps          SCK:             -> CLKBUF1_4/A
+    138.5 ps  SCK_bF_buf1: CLKBUF1_4/Y ->  DFFSR_13/CLK
+
+   hold at destination = 11.4639
+
+Path input pin SCK to DFFSR_8/CLK delay 149.99 ps
+      0.0 ps          SCK:             -> CLKBUF1_4/A
+    138.5 ps  SCK_bF_buf1: CLKBUF1_4/Y ->   DFFSR_8/CLK
+
+   hold at destination = 11.4639
+
+Path input pin SCK to DFFSR_3/CLK delay 149.99 ps
+      0.0 ps          SCK:             -> CLKBUF1_4/A
+    138.5 ps  SCK_bF_buf1: CLKBUF1_4/Y ->   DFFSR_3/CLK
+
+   hold at destination = 11.4639
+
+Path input pin SDI to DFFSR_21/D delay 150.611 ps
+      0.0 ps     SDI:            ->  INVX2_8/A
+     72.8 ps    _86_:  INVX2_8/Y -> MUX2X1_7/B
+    136.3 ps  _4__0_: MUX2X1_7/Y -> DFFSR_21/D
+
+   hold at destination = 14.3382
+
+Path input pin SCK to DFFSR_27/CLK delay 153.715 ps
+      0.0 ps          SCK:             -> CLKBUF1_3/A
+    142.2 ps  SCK_bF_buf2: CLKBUF1_3/Y ->  DFFSR_27/CLK
+
+   hold at destination = 11.4831
+
+-----------------------------------------
+

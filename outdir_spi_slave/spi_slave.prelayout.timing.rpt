@@ -1,0 +1,50 @@
+OpenSTA 2.2.0 0d73b5b65a Copyright (c) 2019, Parallax Software, Inc.
+License GPLv3: GNU GPL version 3 <http://gnu.org/licenses/gpl.html>
+
+This is free software, and you are free to change and redistribute it
+under certain conditions; type `show_copying' for details. 
+This program comes with ABSOLUTELY NO WARRANTY; for details type `show_warranty'.
+Warning: /home/ayush/vsdflow/work/tools/openlane_working_dir/pdks/open_pdks/sky130/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib, line 1 library sky130_fd_sc_hd__tt_025C_1v80 already exists.
+Warning: /home/ayush/vsdflow/outdir_spi_slave/spi_slave.final.synth.v, line 17 module CLKBUF1 not found.  Creating black box for CLKBUF1_1.
+Warning: /home/ayush/vsdflow/outdir_spi_slave/spi_slave.final.synth.v, line 22 module BUFX4 not found.  Creating black box for BUFX4_1.
+Warning: /home/ayush/vsdflow/outdir_spi_slave/spi_slave.final.synth.v, line 36 module NAND2X1 not found.  Creating black box for NAND2X1_1.
+Warning: /home/ayush/vsdflow/outdir_spi_slave/spi_slave.final.synth.v, line 37 module INVX8 not found.  Creating black box for INVX8_1.
+Warning: /home/ayush/vsdflow/outdir_spi_slave/spi_slave.final.synth.v, line 38 module INVX2 not found.  Creating black box for INVX2_1.
+Warning: /home/ayush/vsdflow/outdir_spi_slave/spi_slave.final.synth.v, line 39 module NOR2X1 not found.  Creating black box for NOR2X1_1.
+Warning: /home/ayush/vsdflow/outdir_spi_slave/spi_slave.final.synth.v, line 40 module AND2X2 not found.  Creating black box for AND2X2_1.
+Warning: /home/ayush/vsdflow/outdir_spi_slave/spi_slave.final.synth.v, line 43 module NAND3X1 not found.  Creating black box for NAND3X1_1.
+Warning: /home/ayush/vsdflow/outdir_spi_slave/spi_slave.final.synth.v, line 48 module NOR3X1 not found.  Creating black box for NOR3X1_1.
+Warning: /home/ayush/vsdflow/outdir_spi_slave/spi_slave.final.synth.v, line 50 module OAI21X1 not found.  Creating black box for OAI21X1_1.
+Warning: /home/ayush/vsdflow/outdir_spi_slave/spi_slave.final.synth.v, line 51 module AOI21X1 not found.  Creating black box for AOI21X1_1.
+Warning: /home/ayush/vsdflow/outdir_spi_slave/spi_slave.final.synth.v, line 52 module INVX1 not found.  Creating black box for INVX1_1.
+Warning: /home/ayush/vsdflow/outdir_spi_slave/spi_slave.final.synth.v, line 58 module INVX4 not found.  Creating black box for INVX4_1.
+Warning: /home/ayush/vsdflow/outdir_spi_slave/spi_slave.final.synth.v, line 68 module AOI22X1 not found.  Creating black box for AOI22X1_1.
+Warning: /home/ayush/vsdflow/outdir_spi_slave/spi_slave.final.synth.v, line 85 module MUX2X1 not found.  Creating black box for MUX2X1_1.
+Warning: /home/ayush/vsdflow/outdir_spi_slave/spi_slave.final.synth.v, line 164 module OR2X2 not found.  Creating black box for OR2X2_1.
+Warning: /home/ayush/vsdflow/outdir_spi_slave/spi_slave.final.synth.v, line 169 module OAI22X1 not found.  Creating black box for OAI22X1_1.
+Warning: /home/ayush/vsdflow/outdir_spi_slave/spi_slave.final.synth.v, line 183 module XNOR2X1 not found.  Creating black box for XNOR2X1_1.
+Warning: /home/ayush/vsdflow/outdir_spi_slave/spi_slave.final.synth.v, line 197 module XOR2X1 not found.  Creating black box for XOR2X1_1.
+Warning: /home/ayush/vsdflow/outdir_spi_slave/spi_slave.final.synth.v, line 230 module BUFX2 not found.  Creating black box for BUFX2_1.
+Warning: /home/ayush/vsdflow/outdir_spi_slave/spi_slave.final.synth.v, line 250 module DFFSR not found.  Creating black box for DFFSR_1.
+Warning: spi_slave.sdc, 3 -clock not supported.
+Warning: spi_slave.sdc, 4 -clock not supported.
+Warning: spi_slave.sdc, 5 -clock not supported.
+Warning: spi_slave.sdc, 6 -clock not supported.
+Warning: spi_slave.sdc, 7 set_input_delay relative to a clock defined on the same port/pin not allowed.
+Warning: spi_slave.sdc, 8 set_input_delay relative to a clock defined on the same port/pin not allowed.
+Warning: spi_slave.sdc, 9 set_input_delay relative to a clock defined on the same port/pin not allowed.
+Warning: spi_slave.sdc, 10 set_input_delay relative to a clock defined on the same port/pin not allowed.
+Warning: spi_slave.sdc, 15 -clock not supported.
+Warning: spi_slave.sdc, 16 -clock not supported.
+Warning: spi_slave.sdc, 17 -clock not supported.
+Warning: spi_slave.sdc, 18 -clock not supported.
+Warning: spi_slave.sdc, 23 -clock not supported.
+Warning: spi_slave.sdc, 24 -clock not supported.
+Warning: spi_slave.sdc, 25 -clock not supported.
+Warning: spi_slave.sdc, 26 -clock not supported.
+Warning: spi_slave.sdc, 31 -clock not supported.
+Warning: spi_slave.sdc, 32 -clock not supported.
+Warning: spi_slave.sdc, 33 -clock not supported.
+Warning: spi_slave.sdc, 34 -clock not supported.
+Warning: /home/ayush/vsdflow/outdir_spi_slave/synthesis/spi_slave.prelayout.spef, line 15 syntax error, unexpected $end.
+No paths found.
