@@ -13,14 +13,14 @@ The internship to develop IP/VLSI system design flow at $0 cost using opensource
 ![](Images/Internshiplogo.JPG)
 
 - ### Prerequisites:
-- 1) git clone https://github.com/kunalg123/vsdflow.git 
-- 2) Online courses to inderstand TCL scripting
+1) git clone https://github.com/kunalg123/vsdflow.git \
+2) 
+3) Online courses to inderstand TCL scripting \
 
-TCL scripting part 1:
-https://www.udemy.com/vsd-tcl-programming-from-novice-to-expert/
+   TCL scripting part 1: https://www.udemy.com/vsd-tcl-programming-from-novice-to-expert/
 
-TCL scripting part 2:
-https://www.udemy.com/vsd-tcl-programming-from-novice-to-expert-part-2/
+   TCL scripting part 2: https://www.udemy.com/vsd-tcl-programming-from-novice-to-expert-part-2/
+ 
 
 # 2. Problem statement and methodology
 - Recently, VSD flow using OSU 180nm PDK on Qflow toolset is reported wherein TCL scripting has been performed meticulously which provides an automated solution to evaluate power-performance-area (PPA) major components of the design. However, OpenLANE in new and more user-friendly toolset to perform RTL to GDSII flow in collaboration with Google’s Skywater 130nm PDK. hence, in this project, the mapping is carried out that explains a) the VSDFlow using OpenLANE toolset with Skywater 130nm technology node and b) How Qflow and OSU 180nm PDK can be mapped to OpenLANE and Sky 130nm PDK, respectively. A simple mapping is presented hereby:
@@ -31,44 +31,45 @@ https://www.udemy.com/vsd-tcl-programming-from-novice-to-expert-part-2/
 
 # 3. Initial steps and TCL scripting
 - At first, literature survey is carried out for VSDFlow and TCL scripting. The reported work of TCL scripting using Qflow/OSU180 is studied. The design selected in this work is SPI slave.
-- The initial step was to use the sky 130nm PDK/library files. Accordinlgy, the CSV file (named: spi_slave_design_details.csv) is updated wherein mainly the library path for Early and Late library path were modifed as (Path of sky130 library found in OpenLANE toolset):
-- ~/vsdflow/work/tools/openlane_working_dir/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+- The initial step was to use the sky 130nm PDK/library files. Accordinlgy, the CSV file (named: spi_slave_design_details.csv) is updated wherein mainly the library path for Early and Late library path were modifed as (Path of sky130 library found in OpenLANE toolset):\
+  ~/vsdflow/work/tools/openlane_working_dir/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 
 - In order to check the correct paths for Design name, verilog code (spi_slave.v), Early library path, Late library path, and Output directory, one can use 'return' statement in vsdflow.tcl file after defining the directory/path for each of these.
 
-- The TCL scripting should mainly include 
-
-a) defining CSV file contents and accordingly show error messages to user if any.
-b) defining heirarchy check and Synthesis details to perform synthesis using open source tool Yosys. 
+- The TCL scripting should mainly include \
+a) defining CSV file contents and accordingly show error messages to user if any.\
+b) defining heirarchy check and Synthesis details to perform synthesis using open source tool Yosys.\
 c) Static timing analysis details/script that will be performed using Opentimer opensource tool.
 
 ## Prelayout analysis:
 - Prelayout consist of synthesis, initial PNR, and Static timing analysis. hence, after writing the whold VSDflow TCL script these can be analysed by putting 'return' statement ater STA script section.
 
-- To edit the vsdflow.tcl file, use command (in VSDFLOW directory):
-  vim vsdflow.tcl
+- To edit the vsdflow.tcl file, use command (in VSDFLOW directory):\
+                     vim vsdflow.tcl
 
-- These steps will be run through the TCL scripting using the command:
-  ./vsdflow spi_slave_design_details.csv
+- These steps will be run through the TCL scripting using the command:\
+            ./vsdflow spi_slave_design_details.csv
 
 - The synthesis and STA files will be generated afterward. These can be seen in synthesis folder of Output directory.
 
 - The initial RTL of the SPI slave design is generated after synthesis wherein the GATE level architecture (containing sky130 standard cells) can be seen.
 
 #### Steps to generate RTL:
-1) After the synthesis is done, check the output directory wherein several files have been created post synthesis and STA.
+1) After the synthesis is done, check the output directory wherein several files have been created post synthesis and STA.\
 image
 
 2) As the synthesis is performed though Yosys tool, hence, through the TCL scripting .ys file for the design is generated (spin_slave.ys). Using the following command,see the content of the .ys file and copy the file-content:\
-cat design_name.ys
+                            cat design_name.ys
 
-3) How to open Yosys, just need to type 'Yosys'. It will open the Yosys tool suite, displayed below:
+3) How to open Yosys, just need to type 'Yosys'. It will open the Yosys tool suite, displayed below:\
 image
 
 4) Now, paste the content of .ys file to the Yosys tool suite, it will run line-by-line explaining detail of each step. Finally, to see the RTL (gate-level architecture of the design) type 'show' in the Yosys suite. It will open the XDot window that will display the RTL of the design (check the file: spi_slave_RTL.pdf)
 
-5) Afterward,the complete gate-level architectural connection can also be seen using command:
+5) Afterward,the complete gate-level architectural connection can also be seen using command:\
 cat spi_slave.synth.v
 
+Capture of spi_slave.synth.v is displayed below:
 image
+
 Note: This also creates the initial placement and routing (PNR) of the design.
