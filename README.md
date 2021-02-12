@@ -56,13 +56,13 @@ c) Static timing analysis details/script that will be performed using Opentimer 
 
 #### Steps to generate RTL:
 1) After the synthesis is done, check the output directory wherein several files have been created post synthesis and STA.\
-![](Images/out directory.JPG)
+![](Images/out%20directory.JPG)
 
 2) As the synthesis is performed though Yosys tool, hence, through the TCL scripting .ys file for the design is generated (spin_slave.ys). Using the following command,see the content of the .ys file and copy the file-content:\
 >   cat design_name.ys
 
 3) How to open Yosys, just need to type 'Yosys'. It will open the Yosys tool suite, displayed below:\
-![](Images/yosys tool.JPG)
+![](Images/yosys%20tool.JPG)
 
 4) Now, paste the content of .ys file to the Yosys tool suite, it will run line-by-line explaining detail of each step. Finally, to see the RTL (gate-level architecture of the design) type 'show' in the Yosys suite. It will open the XDot window that will display the RTL of the design (check the file: spi_slave_RTL.pdf)
 
