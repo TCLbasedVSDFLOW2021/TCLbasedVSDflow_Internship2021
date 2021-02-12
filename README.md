@@ -14,7 +14,7 @@ The internship to develop IP/VLSI system design flow at $0 cost using opensource
 
 - ### Prerequisites:
 1) git clone https://github.com/kunalg123/vsdflow.git 
-2) 
+2) git clone https://github.com/nickson-jose/openlane_build_script.git  (check the details to invoke OpenLANE toolset)
 3) Online courses to inderstand TCL scripting 
 
    TCL scripting part 1: https://www.udemy.com/vsd-tcl-programming-from-novice-to-expert/
@@ -56,13 +56,13 @@ c) Static timing analysis details/script that will be performed using Opentimer 
 
 #### Steps to generate RTL:
 1) After the synthesis is done, check the output directory wherein several files have been created post synthesis and STA.\
-image
+![](Images/out directory.JPG)
 
 2) As the synthesis is performed though Yosys tool, hence, through the TCL scripting .ys file for the design is generated (spin_slave.ys). Using the following command,see the content of the .ys file and copy the file-content:\
-                            cat design_name.ys
+>   cat design_name.ys
 
 3) How to open Yosys, just need to type 'Yosys'. It will open the Yosys tool suite, displayed below:\
-image
+![](Images/yosys tool.JPG)
 
 4) Now, paste the content of .ys file to the Yosys tool suite, it will run line-by-line explaining detail of each step. Finally, to see the RTL (gate-level architecture of the design) type 'show' in the Yosys suite. It will open the XDot window that will display the RTL of the design (check the file: spi_slave_RTL.pdf)
 
@@ -70,6 +70,6 @@ image
 cat spi_slave.synth.v
 
 Capture of spi_slave.synth.v is displayed below:
-image
+![](Images/spi_slave_synth_rtl_detail.JPG)
 
 Note: This also creates the initial placement and routing (PNR) of the design.
