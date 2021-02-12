@@ -60,7 +60,7 @@ c) Static timing analysis details/script that will be performed using Opentimer 
 image
 
 2) As the synthesis is performed though Yosys tool, hence, through the TCL scripting .ys file for the design is generated (spin_slave.ys). Using the following command,see the content of the .ys file and copy the file-content:
-cat design_name.ys
+/n cat design_name.ys
 
 3) How to open Yosys, just need to type 'Yosys'. It will open the Yosys tool suite, displayed below:
 image
