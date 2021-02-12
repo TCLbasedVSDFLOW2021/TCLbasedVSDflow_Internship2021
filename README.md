@@ -13,9 +13,9 @@ The internship to develop IP/VLSI system design flow at $0 cost using opensource
 ![](Images/Internshiplogo.JPG)
 
 - ### Prerequisites:
-1) git clone https://github.com/kunalg123/vsdflow.git \
+1) git clone https://github.com/kunalg123/vsdflow.git 
 2) 
-3) Online courses to inderstand TCL scripting \
+3) Online courses to inderstand TCL scripting 
 
    TCL scripting part 1: https://www.udemy.com/vsd-tcl-programming-from-novice-to-expert/
 
@@ -45,7 +45,7 @@ c) Static timing analysis details/script that will be performed using Opentimer 
 - Prelayout consist of synthesis, initial PNR, and Static timing analysis. hence, after writing the whold VSDflow TCL script these can be analysed by putting 'return' statement ater STA script section.
 
 - To edit the vsdflow.tcl file, use command (in VSDFLOW directory):\
-                     vim vsdflow.tcl
+  >>>>>>>>>>>> vim vsdflow.tcl
 
 - These steps will be run through the TCL scripting using the command:\
             ./vsdflow spi_slave_design_details.csv
