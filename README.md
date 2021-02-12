@@ -31,9 +31,8 @@ https://www.udemy.com/vsd-tcl-programming-from-novice-to-expert-part-2/
 
 # 3. Initial steps and TCL scripting
 - At first, literature survey is carried out for VSDFlow and TCL scripting. The reported work of TCL scripting using Qflow/OSU180 is studied. The design selected in this work is SPI slave.
-- The initial step was to use the sky 130nm PDK/library files. Accordinlgy, the CSV file (named: spi_slave_design_details.csv) is updated wherein mainly the library path for Early and Late library path were modifed as (Path of sky130 library found in OpenLANE toolset)
-
-~/vsdflow/work/tools/openlane_working_dir/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+- The initial step was to use the sky 130nm PDK/library files. Accordinlgy, the CSV file (named: spi_slave_design_details.csv) is updated wherein mainly the library path for Early and Late library path were modifed as (Path of sky130 library found in OpenLANE toolset):
+- ~/vsdflow/work/tools/openlane_working_dir/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 
 - In order to check the correct paths for Design name, verilog code (spi_slave.v), Early library path, Late library path, and Output directory, one can use 'return' statement in vsdflow.tcl file after defining the directory/path for each of these.
 
@@ -45,9 +44,12 @@ c) Static timing analysis details/script that will be performed using Opentimer 
 
 ### Prelayout analysis:
 - Prelayout consist of synthesis, initial PNR, and Static timing analysis. hence, after writing the whold VSDflow TCL script these can be analysed by putting 'return' statement ater STA script section.
-- These steps will be run through the TCL scripting using the command
 
-./vsdflow spi_slave_design_details.csv
+- To edit the vsdflow.tcl file, use command (in VSDFLOW directory):
++ vim vsdflow.tcl
+
+- These steps will be run through the TCL scripting using the command:
+- ./vsdflow spi_slave_design_details.csv
 
 - The synthesis and STA files will be generated afterward. These can be seen in synthesis folder of Output directory.
 
