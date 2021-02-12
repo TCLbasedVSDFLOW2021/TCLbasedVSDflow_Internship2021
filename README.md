@@ -42,15 +42,33 @@ a) defining CSV file contents and accordingly show error messages to user if any
 b) defining heirarchy check and Synthesis details to perform synthesis using open source tool Yosys. 
 c) Static timing analysis details/script that will be performed using Opentimer opensource tool.
 
-### Prelayout analysis:
+## Prelayout analysis:
 - Prelayout consist of synthesis, initial PNR, and Static timing analysis. hence, after writing the whold VSDflow TCL script these can be analysed by putting 'return' statement ater STA script section.
 
 - To edit the vsdflow.tcl file, use command (in VSDFLOW directory):
-+ vim vsdflow.tcl
+  vim vsdflow.tcl
 
 - These steps will be run through the TCL scripting using the command:
-- ./vsdflow spi_slave_design_details.csv
+  ./vsdflow spi_slave_design_details.csv
 
 - The synthesis and STA files will be generated afterward. These can be seen in synthesis folder of Output directory.
 
-- The initial RTL of the SPI slave design is generated after synthesis wherein the GATE level architecture (containing sky130 standard cells) can be seen. 
+- The initial RTL of the SPI slave design is generated after synthesis wherein the GATE level architecture (containing sky130 standard cells) can be seen.
+
+#### Steps to generate RTL:
+1) After the synthesis is done, check the output directory wherein several files have been created post synthesis and STA.
+image
+
+2) As the synthesis is performed though Yosys tool, hence, through the TCL scripting .ys file for the design is generated (spin_slave.ys). Using the following command,see the content of the .ys file and copy the file-content:
+cat design_name.ys
+
+3) How to open Yosys, just need to type 'Yosys'. It will open the Yosys tool suite, displayed below:
+image
+
+4) Now, paste the content of .ys file to the Yosys tool suite, it will run line-by-line explaining detail of each step. Finally, to see the RTL (gate-level architecture of the design) type 'show' in the Yosys suite. It will open the XDot window that will display the RTL of the design (check the file: spi_slave_RTL.pdf)
+
+5) Afterward,the complete gate-level architectural connection can also be seen using command:
+cat spi_slave.synth.v
+
+image
+Note: This also creates the initial placement and routing (PNR) of the design.
