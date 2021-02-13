@@ -419,6 +419,9 @@ file mkdir $OutputDirectory/synthesis
 if {![file isdirectory $OutputDirectory/layout]} {
 file mkdir $OutputDirectory/layout
 }
+
+#file link -symbolic $OutputDirectory/$DesignName.synth.v $OutputDirectory/synthesis/$DesignName.rtlnopwr.v
+
 ---------------------- Run Synthesis Script using Yosys -------------#
 
 
