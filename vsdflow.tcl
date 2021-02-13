@@ -408,7 +408,20 @@ close $fileId
 puts "\nInfo: Synthesis script created and can be accessed from path $OutputDirectory/$DesignName.ys"
 puts "\nInfo: Running Synthesis..."
 
-#---------------------- Run Synthesis Script using Yosys -------------#
+if {![file isdirectory $OutputDirectory/source]} {
+file mkdir $OutputDirectory/source
+}
+
+if {![file isdirectory $OutputDirectory/synthesis]} {
+file mkdir $OutputDirectory/synthesis
+}
+
+if {![file isdirectory $OutputDirectory/layout]} {
+file mkdir $OutputDirectory/layout
+}
+---------------------- Run Synthesis Script using Yosys -------------#
+
+
 
 if {[catch { exec yosys -s $OutputDirectory/$DesignName.ys >& $OutputDirectory/$DesignName.synthesis.log} msg]} {
 	puts "\nError: Synthesis failed due to errors . Refer to log $OutputDirectory/$DesignName.synthesis.log for errors"
