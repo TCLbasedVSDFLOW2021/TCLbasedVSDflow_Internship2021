@@ -29,12 +29,12 @@ The internship to develop IP/VLSI system design flow at $0 cost using opensource
 - The methodology for the project is shown hereby:
 ![](Images/methodology.jpg)
 
-# 3. Initial steps and TCL scripting
+# 3. Initial steps and TCL scripting9
 - At first, literature survey is carried out for VSDFlow and TCL scripting. The reported work of TCL scripting using Qflow/OSU180 is studied. The design selected in this work is SPI slave.
 - The initial step was to use the sky 130nm PDK/library files. Accordinlgy, the CSV file (named: spi_slave_design_details.csv) is updated wherein mainly the library path for Early and Late library path were modifed as (Path of sky130 library found in OpenLANE toolset):\
   ~/vsdflow/work/tools/openlane_working_dir/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 
-- In order to check the correct paths for Design name, verilog code (spi_slave.v), Early library path, Late library path, and Output directory, one can use 'return' statement in vsdflow.tcl file after defining the directory/path for each of these.
+- In order to check the correct paths for Design name, verilog code ![](spi_slave.v) , Early library path, Late library path, and Output directory, one can use 'return' statement in vsdflow.tcl file after defining the directory/path for each of these.
 
 - The TCL scripting should mainly include \
 a) defining CSV file contents and accordingly show error messages to user if any.\
