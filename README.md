@@ -72,4 +72,21 @@ cat spi_slave.synth.v
 Capture of spi_slave.synth.v is displayed below:
 ![](Images/spi_slave_synth_rtl_detail.JPG)
 
-Note: This also creates the initial placement and routing (PNR) of the design.
+- Note: This also creates the initial placement and routing (PNR) of the design.
+
+# 4. OpenLANE and Skywater130
+- OpenLANE is a toolset to run VLSI design flow (RTL to GDS) using several tools for several VSDflow steps.
+- In this project, the VSDFLOW needs to be automated through TCL scripting wherein CSV file containing design specifications should be able to perform the complete VSDflow.
+- In order to perform this task, following steps need to be followed:
+  - 1. To understand the .csv file and its input files and their paths (such as verilog file path, library path)
+  - 2. To understand the steps to be followed to run a RTL file using OpenLANE and perform VSDflow (synthesis, timing-analysis, floorplan etc.)
+  - 3. Performing the VSDflow of the desired .v file using sky130 library file in OpenLANE using standard procedure
+  - 4. Automate the complete process through TCL/shell scripting.
+
+### Performing VSDflow manually on openLANE
+- At first, we need to understad the flow.tcl file and understand that how any arbitrary .v file can be run in OpenLANE platform.
+- As 'designs' folder is the place wherein the verilog file needs to be present. Hence, at first we need to copy the verilog file in designs directory
+  - create folder named 'design' (spi_slave) and create 'src' folder in there
+  - Copy the .v file in src folder
+  - ![](Images/spi_slave_synth_rtl_detail.JPG)
+
