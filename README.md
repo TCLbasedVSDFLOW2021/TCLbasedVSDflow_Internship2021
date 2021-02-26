@@ -88,5 +88,12 @@ Capture of spi_slave.synth.v is displayed below:
 - As 'designs' folder is the place wherein the verilog file needs to be present. Hence, at first we need to copy the verilog file in designs directory
   - create folder named 'design' (spi_slave) and create 'src' folder in there
   - Copy the .v file in src folder
-  - ![](Images/spi_slave_synth_rtl_detail.JPG)
+  - ![](Images/spi_slave_makein_designs.JPG)
+  - Now, config.tcl file needs to be created to set environment and provide information of .v file, clock, and sdc etc. We can update any additional information about the design in config.tcl file. 
+  - Command: ./flow.tcl -designs spi_slave -init_design_config
+  - ![](Images/create_config_file.JPG)
+  - Afterward, modification in config file can be done (use 'vim config.tcl' command for modification) and then perform the synthesis. This will run the synthesis in openlane using Yosys synthesis tool.
+  - ![](Images/running_synthesis_Openlane.JPG)
+
+### These manual step should be automated in TCL script that can invoke OpenLANE automatically inside the Docker through TCL script itself. Later, all the steps explained above should be scripted so that VSDflow can be performed automatically in OpenLANE.
 
