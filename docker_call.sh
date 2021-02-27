@@ -3,7 +3,6 @@
 set working_dir = 'pwd'
 
 cd designs
-
 mkdir spi_slave
 
 cd spi_slave
